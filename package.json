@@ -1,0 +1,28 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "ProShop Ecommerce App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \" npm run server\" && \" npm run client\"",
+    "db:import": "node backend/seeder.js",
+    "db:delete": "node backend/seeder.js -d"
+  },
+  "author": "Rahul Gayen",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
