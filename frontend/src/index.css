@@ -9,6 +9,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* main {
-  height: 80vh;
-} */
+main {
+  min-height: 82.5vh;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
